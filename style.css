@@ -1,0 +1,36 @@
+/*font-family: 'Volkhov', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+body {
+  background-color: rgb(42,13,69);
+  color: rgb(255,255,255);
+}
+
+#title {
+  font-family: 'Volkhov', serif;
+  font-size: 100px;
+  width: 700px;
+  text-align: center;
+  border: 5px solid white;
+  margin: 0 auto;
+}
+
+#byline {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 30px;
+}
+
+#tagline {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 100px;
+}
+
+.subhead {
+  font-family: 'Volkhov', serif;
+  font-size: 50px;
+  text-align: center
+}
