@@ -5,14 +5,15 @@
   <title>Hello World</title>
   <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed" rel="stylesheet">
+  <script src="https://use.fontawesome.com/ec69052e32.js"></script>
 </head>
 <body>
-  <div id="title">I <span id="heart">&hearts;</span> a div</div>
+  <div id="title">I <span id="heart"><i class="fa fa-heart" aria-hidden="true"></i></span> a div</div>
   <div id="byline">By Aileen Wong</div>
   <div id="tagline">Hi! I love CSS. And I love a div.</div>
   <div class="subhead">CSS Animations</div>
   <div class="subheadcat">Hovers</div>
-    <div id="animationWrap">
+    <div class="animationWrap">
       <div class="animation">
         <div class="animationTitle">Drop Down Reveal On Hover</div>
           <div id="stationaryDiv">
@@ -26,6 +27,22 @@
       <div class="animation">
         <div class="animationTitle">Fade In On Hover</div>
           <div id="fadeInDiv"></div>
+      </div>
+    </div>
+    <div class="subheadcat">Active on Page Load</div>
+    <div class="animationWrap">
+      <div class="animation">
+        <div class="animationTitle">Circles Falling</div>
+          <div id="circlesFalling">
+            <ul class="circlesFallWrap">
+              <li class="circle" id="cir1"></li>
+              <li class="circle" id="cir2"></li>
+              <li class="circle" id="cir3"></li>
+              <li class="circle" id="cir4"></li>
+              <li class="circle" id="cir5"></li>
+              <li class="circle" id="cir6"></li>
+            </ul>
+          </div>
       </div>
     </div>
 </body>

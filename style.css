@@ -15,6 +15,7 @@ body {
   text-transform: uppercase;
   border: 5px solid white;
   margin: 0 auto;
+  background-color: rgb(64,64,64);
 }
 
 #heart {
@@ -35,39 +36,52 @@ body {
 }
 
 .subhead {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 30px;
   text-align: center;
-  color: rgb(242,92,92);
+  padding: 20px;
+  border: 5px solid white;
+  color: white;
+  background-color: rgb(64,64,64);
 }
 
 .subheadcat {
   font-size: 30px;
-  margin-bottom: 30px;
+  margin: 30px 0 30px 0;
   text-align: center;
   color: rgb(242,92,92);
 }
 
 /*CSS ANIMATIONS*/
-#animationWrap {
+.animationWrap {
   display: flex;
   position: relative;
+  flex-direction: row;
   justify-content: space-around;
 }
 
 .animation {
-  border: 1px solid white;
-  padding: 10px;
+  position: relative;
+  background-color: white;
+  border: 1px solid darkgray;
+  padding: 0 10px 10px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 300px;
+  height: 200px;
+  border-radius: 5px;
 }
 
 .animationTitle {
-  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: rgb(64,64,64);
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
   padding: 10px;
   color: rgb(242,92,92);
+  border-radius: 5px 5px 0 0;
 }
 
 /*DROP DOWN REVEAL HOVER*/
@@ -127,5 +141,65 @@ body {
 
 #fadeInDiv:hover {
   opacity: 1;
+}
+
+/*CIRCLES FALLING*/
+
+#circlesFalling {
+  text-align: center;
+}
+
+.circlesFallWrap {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 5px;
+  transform: translateY(-30px);
+  animation: bounce-balls 1.2s cubic-bezier(0.245, 0.325, 0.510, 1.305) infinite alternate;
+}
+
+@keyframes bounce-balls {
+  30% {transform: translateY(-30px);}
+  60% {transform: translateY(115px);}
+  80% {transform: translateY(100px);}
+  100% {transform: translateY(105px);}
+}
+
+#cir1 {
+  background-color: rgb(173,216,230);
+  animation-delay: .6s;
+}
+
+#cir2 {
+  background-color: rgb(135,206,250);
+  animation-delay: .7s;
+}
+
+#cir3 {
+  background-color: rgb(100,149,237);
+  animation-delay: .8s;
+}
+
+#cir4 {
+  background-color: rgb(70,130,180);
+  animation-delay: .6s;
+}
+
+#cir5 {
+  background-color: rgb(0,0,205);
+  animation-delay: .4s;
+}
+
+#cir6 {
+  background-color: rgb(0,0,128);
+  animation-delay: .5s;
 }
 
