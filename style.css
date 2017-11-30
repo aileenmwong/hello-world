@@ -116,5 +116,16 @@ body {
 
 }
 
+/*FADE IN ON HOVER*/
+#fadeInDiv {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  opacity: .4;
+  transition: .5s ease-in-out;
+}
 
+#fadeInDiv:hover {
+  opacity: 1;
+}
 
