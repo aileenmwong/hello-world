@@ -1,36 +1,98 @@
-/*font-family: 'Volkhov', serif;
+/*
+font-family: 'Open Sans Condensed', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
 body {
-  background-color: rgb(42,13,69);
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(211,211,211);
   color: rgb(255,255,255);
 }
 
 #title {
-  font-family: 'Volkhov', serif;
   font-size: 100px;
   width: 700px;
   text-align: center;
+  text-transform: uppercase;
   border: 5px solid white;
   margin: 0 auto;
 }
 
+#heart {
+  color: rgb(242,92,92);
+}
+
 #byline {
-  font-family: 'Open Sans', sans-serif;
   font-size: 30px;
   text-align: center;
   margin: 30px;
 }
 
 #tagline {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 30px;
   text-align: center;
   margin: 100px;
 }
 
 .subhead {
-  font-family: 'Volkhov', serif;
-  font-size: 50px;
-  text-align: center
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: rgb(242,92,92);
 }
+
+/*CSS ANIMATIONS*/
+#animationWrap {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+}
+
+.animation {
+  border: 1px solid white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.animationTitle {
+  font-size: 20px;
+  padding: 10px;
+  color: rgb(242,92,92);
+}
+
+/*DROP DOWN REVEAL*/
+
+#stationaryDiv {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+
+#dropdownDiv {
+  position: absolute;
+  bottom: 100%;
+  height: 0;
+  background-color: yellow;
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+#stationaryDiv:hover #dropdownDiv {
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/*FLIP REVEAL*/
+
+#flipDiv {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+
+
