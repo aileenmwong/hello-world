@@ -4,7 +4,7 @@ font-family: 'Open Sans', sans-serif;
 */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: rgb(211,211,211);
+  background-color: white;
   color: rgb(255,255,255);
 }
 
@@ -37,7 +37,7 @@ body {
 
 .subhead {
   font-size: 30px;
-  margin-bottom: 30px;
+  margin: 30px 0 30px 0;
   text-align: center;
   padding: 20px;
   border: 5px solid white;
@@ -51,6 +51,223 @@ body {
   text-align: center;
   color: rgb(242,92,92);
 }
+
+/*FULL PAGE ANIMATIONS*/
+
+#rainbowlines {
+
+}
+
+/*CIRCLES FALLING DIV*/
+
+#headcirclesFalling {
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+
+.headcirclesFallWrap {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+
+.headcircle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 5px;
+  transform: translateY(-30px);
+  animation: bounce-balls 1.2s cubic-bezier(0.245, 0.325, 0.510, 1.305) infinite alternate;
+}
+
+@keyframes bounce-balls {
+  30% {transform: translateY(-30px);}
+  60% {transform: translateY(115px);}
+  80% {transform: translateY(100px);}
+  100% {transform: translateY(105px);}
+}
+
+#head-cir1 {
+  background-color: rgb(173,216,230);
+  animation-delay: .1s;
+}
+
+#head-cir2 {
+  background-color: rgb(135,206,250);
+  animation-delay: .2s;
+}
+
+#head-cir3 {
+  background-color: rgb(100,149,237);
+  animation-delay: .3s;
+}
+
+#head-cir4 {
+  background-color: rgb(70,130,180);
+  animation-delay: .4s;
+}
+
+#head-cir5 {
+  background-color: rgb(0,0,205);
+  animation-delay: .5s;
+}
+
+#head-cir6 {
+  background-color: rgb(0,0,128);
+  animation-delay: .6s;
+}
+
+#head-cir7 {
+  background-color: rgb(173,216,230);
+  animation-delay: .7s;
+}
+
+#head-cir8 {
+  background-color: rgb(135,206,250);
+  animation-delay: .8s;
+}
+
+#head-cir9 {
+  background-color: rgb(100,149,237);
+  animation-delay: .9s;
+}
+
+#head-cir10 {
+  background-color: rgb(70,130,180);
+  animation-delay: 1.0s;
+}
+
+#head-cir11 {
+  background-color: rgb(0,0,205);
+  animation-delay: 1.1s;
+}
+
+#head-cir12 {
+  background-color: rgb(0,0,128);
+  animation-delay: 1.2s;
+}
+
+#head-cir13 {
+  background-color: rgb(173,216,230);
+  animation-delay: 1.3s;
+}
+
+#head-cir14 {
+  background-color: rgb(135,206,250);
+  animation-delay: 1.4s;
+}
+
+#head-cir15 {
+  background-color: rgb(100,149,237);
+  animation-delay: 1.5s;
+}
+
+#head-cir16 {
+  background-color: rgb(70,130,180);
+  animation-delay: 1.6s;
+}
+
+#head-cir17 {
+  background-color: rgb(0,0,205);
+  animation-delay: 1.7s;
+}
+
+#head-cir18 {
+  background-color: rgb(0,0,128);
+  animation-delay: 1.8s;
+}
+#head-cir19 {
+  background-color: rgb(173,216,230);
+  animation-delay: 1.9s;
+}
+
+#head-cir20 {
+  background-color: rgb(135,206,250);
+  animation-delay: 2.0s;
+}
+
+#head-cir21 {
+  background-color: rgb(100,149,237);
+  animation-delay: 2.1s;
+}
+
+#head-cir22 {
+  background-color: rgb(70,130,180);
+  animation-delay: 2.2s;
+}
+
+#head-cir23 {
+  background-color: rgb(0,0,205);
+  animation-delay: 2.3s;
+}
+
+#head-cir24 {
+  background-color: rgb(0,0,128);
+  animation-delay: 2.4s;
+}
+
+#head-cir25 {
+  background-color: rgb(0,0,128);
+  animation-delay: 2.5s;
+}
+#head-cir26 {
+  background-color: rgb(173,216,230);
+  animation-delay: 2.6s;
+}
+
+#head-cir27 {
+  background-color: rgb(135,206,250);
+  animation-delay: 2.7s;
+}
+
+#head-cir28 {
+  background-color: rgb(100,149,237);
+  animation-delay: 2.8s;
+}
+
+#head-cir29 {
+  background-color: rgb(70,130,180);
+  animation-delay: 2.9s;
+}
+
+#head-cir30 {
+  background-color: rgb(0,0,205);
+  animation-delay: 3.0s;
+}
+
+#head-cir31 {
+  background-color: rgb(0,0,128);
+  animation-delay: 3.1s;
+}
+#head-cir32 {
+  background-color: rgb(135,206,250);
+  animation-delay: 3.2s;
+}
+
+#head-cir33 {
+  background-color: rgb(100,149,237);
+  animation-delay: 3.3s;
+}
+
+#head-cir34 {
+  background-color: rgb(70,130,180);
+  animation-delay: 3.4s;
+}
+
+#head-cir35 {
+  background-color: rgb(0,0,205);
+  animation-delay: 3.5s;
+}
+
+#head-cir36 {
+  background-color: rgb(0,0,128);
+  animation-delay: 3.6s;
+}
+
 
 /*CSS ANIMATIONS*/
 .animationWrap {
