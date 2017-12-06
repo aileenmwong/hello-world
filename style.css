@@ -54,17 +54,86 @@ body {
 
 /*FULL PAGE ANIMATIONS*/
 
-#rainbowlines {
-
+.animationFull {
+  width: 100%;
+  height: 200px;
+  background-color: white;
 }
+
+/*RAINBOW LINES DIV*/
+
+#rainbowlines {
+  border: 1px solid white;
+}
+
+.rainbowLinesWrap {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+
+.line {
+  width: 50px;
+  height: 200px;
+  transform: rotate(45deg);
+}
+
+.lineGroup1 {
+  background-color: rgb(65,200,192);
+}
+
+.lineGroup1:hover {
+  background-color: rgb(200,65,73);
+}
+
+.lineGroup2 {
+  background-color: rgb(81,128,160);
+}
+
+.lineGroup2:hover {
+  background-color: rgb(80,219,178);
+}
+
+.lineGroup3 {
+  background-color: rgb(127,118,162);
+}
+
+.lineGroup3:hover {
+  background-color: rgb(151,160,115);
+}
+
+.lineGroup4 {
+  background-color: rgb(255,112,116);
+}
+
+.lineGroup4:hover {
+  background-color: rgb(112,255,251);
+}
+
+.lineGroup5 {
+  background-color: rgb(255,190,163);
+}
+
+.lineGroup5:hover {
+  background-color: rgb(163,228,255);
+}
+
+.lineGroup6 {
+  background-color: rgb(255,230,193);
+}
+
+.lineGroup6:hover {
+  background-color: rgb(193,218,255);
+}
+
+
 
 /*CIRCLES FALLING DIV*/
 
 #headcirclesFalling {
   text-align: center;
-  width: 100%;
-  height: 200px;
-  background-color: white;
 }
 
 .headcirclesFallWrap {
@@ -91,180 +160,168 @@ body {
   100% {transform: translateY(105px);}
 }
 
-#head-cir1 {
+.circleGroup1 {
   background-color: rgb(173,216,230);
+}
+
+.circleGroup2 {
+  background-color: rgb(135,206,250);
+}
+
+.circleGroup3 {
+  background-color: rgb(100,149,237);
+}
+
+.circleGroup4 {
+  background-color: rgb(70,130,180);
+}
+
+.circleGroup5 {
+  background-color: rgb(0,0,205);
+}
+
+.circleGroup6 {
+  background-color: rgb(0,0,128);
+}
+
+#head-cir1 {
   animation-delay: .1s;
 }
 
 #head-cir2 {
-  background-color: rgb(135,206,250);
   animation-delay: .2s;
 }
 
 #head-cir3 {
-  background-color: rgb(100,149,237);
   animation-delay: .3s;
 }
 
 #head-cir4 {
-  background-color: rgb(70,130,180);
   animation-delay: .4s;
 }
 
 #head-cir5 {
-  background-color: rgb(0,0,205);
   animation-delay: .5s;
 }
 
 #head-cir6 {
-  background-color: rgb(0,0,128);
   animation-delay: .6s;
 }
 
 #head-cir7 {
-  background-color: rgb(173,216,230);
   animation-delay: .7s;
 }
 
 #head-cir8 {
-  background-color: rgb(135,206,250);
   animation-delay: .8s;
 }
 
 #head-cir9 {
-  background-color: rgb(100,149,237);
   animation-delay: .9s;
 }
 
 #head-cir10 {
-  background-color: rgb(70,130,180);
   animation-delay: 1.0s;
 }
 
 #head-cir11 {
-  background-color: rgb(0,0,205);
   animation-delay: 1.1s;
 }
 
 #head-cir12 {
-  background-color: rgb(0,0,128);
   animation-delay: 1.2s;
 }
 
 #head-cir13 {
-  background-color: rgb(173,216,230);
   animation-delay: 1.3s;
 }
 
 #head-cir14 {
-  background-color: rgb(135,206,250);
   animation-delay: 1.4s;
 }
 
 #head-cir15 {
-  background-color: rgb(100,149,237);
   animation-delay: 1.5s;
 }
 
 #head-cir16 {
-  background-color: rgb(70,130,180);
   animation-delay: 1.6s;
 }
 
 #head-cir17 {
-  background-color: rgb(0,0,205);
   animation-delay: 1.7s;
 }
 
 #head-cir18 {
-  background-color: rgb(0,0,128);
   animation-delay: 1.8s;
 }
 #head-cir19 {
-  background-color: rgb(173,216,230);
   animation-delay: 1.9s;
 }
 
 #head-cir20 {
-  background-color: rgb(135,206,250);
   animation-delay: 2.0s;
 }
 
 #head-cir21 {
-  background-color: rgb(100,149,237);
   animation-delay: 2.1s;
 }
 
 #head-cir22 {
-  background-color: rgb(70,130,180);
   animation-delay: 2.2s;
 }
 
 #head-cir23 {
-  background-color: rgb(0,0,205);
   animation-delay: 2.3s;
 }
 
 #head-cir24 {
-  background-color: rgb(0,0,128);
   animation-delay: 2.4s;
 }
 
 #head-cir25 {
-  background-color: rgb(0,0,128);
   animation-delay: 2.5s;
 }
 #head-cir26 {
-  background-color: rgb(173,216,230);
   animation-delay: 2.6s;
 }
 
 #head-cir27 {
-  background-color: rgb(135,206,250);
   animation-delay: 2.7s;
 }
 
 #head-cir28 {
-  background-color: rgb(100,149,237);
   animation-delay: 2.8s;
 }
 
 #head-cir29 {
-  background-color: rgb(70,130,180);
   animation-delay: 2.9s;
 }
 
 #head-cir30 {
-  background-color: rgb(0,0,205);
   animation-delay: 3.0s;
 }
 
 #head-cir31 {
-  background-color: rgb(0,0,128);
   animation-delay: 3.1s;
 }
 #head-cir32 {
-  background-color: rgb(135,206,250);
   animation-delay: 3.2s;
 }
 
 #head-cir33 {
-  background-color: rgb(100,149,237);
   animation-delay: 3.3s;
 }
 
 #head-cir34 {
-  background-color: rgb(70,130,180);
   animation-delay: 3.4s;
 }
 
 #head-cir35 {
-  background-color: rgb(0,0,205);
   animation-delay: 3.5s;
 }
 
 #head-cir36 {
-  background-color: rgb(0,0,128);
   animation-delay: 3.6s;
 }
 
