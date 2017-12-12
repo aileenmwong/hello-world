@@ -477,3 +477,45 @@ body {
   animation-delay: .5s;
 }
 
+/*SPINNERS*/
+
+.spinnerwrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.spinner {
+  border-radius: 2% 50%;
+  height: 100px;
+  transition: 3s ease-out;
+  width: 100px;
+}
+
+.spinner:hover {
+  transform: rotate(1080deg);
+}
+
+.spinnerGroup1 {
+  background-color: rgb(65,200,192);
+}
+
+.spinnerGroup2 {
+  background-color: rgb(81,128,160);
+}
+
+.spinnerGroup3 {
+  background-color: rgb(127,118,162);
+}
+
+.spinnerGroup4 {
+  background-color: rgb(255,112,116);
+}
+
+.spinnerGroup5 {
+  background-color: rgb(255,190,163);
+}
+
+.spinnerGroup6 {
+  background-color: rgb(255,230,193);
+}
+
