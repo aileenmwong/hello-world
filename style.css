@@ -88,6 +88,9 @@ body {
   background-color: white;
 }
 
+.childAnim {
+  margin: 0 auto;
+}
 
 /*RAINBOW LINES DIV*/
 
@@ -162,7 +165,7 @@ body {
 
 /*CIRCLES FALLING DIV*/
 
-#headcirclesFalling {
+.headcirclesFalling {
   text-align: center;
 }
 
@@ -196,10 +199,14 @@ body {
 /*SPINNERS*/
 
 .spinnerwrap {
+  text-align: center;
+  list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  padding-left: 0;
+  justify-content: space-around;
 }
+
 .spinner {
   border-radius: 2% 50%;
   height: 100px;
@@ -210,6 +217,64 @@ body {
 .spinner:hover {
   transform: rotate(1080deg);
 }
+
+/* BEATING HEARTS */
+
+.beatingHeartsWrap {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  justify-content: space-around;
+}
+
+.beatHeart {
+  font-size: 100px;
+}
+
+.beatHeart:hover {
+  animation: heartbeat 1s infinite ease-out;
+}
+
+@keyframes heartbeat {
+  25% { transform: scale(.75); }
+  50% { transform: scale(1); }
+  75% { transform: scale(.75); }
+  100% { transform: scale(1); }
+}
+
+/*.beatHeart:before,
+.beatHeart:after {
+  font-size: 100px;
+}*/
+
+
+.heartGroup1 {
+  color: rgb(18,197,72);
+}
+
+.heartGroup2 {
+  color: rgb(255,185,0);
+}
+
+.heartGroup3 {
+  color: rgb(255,120,0);
+}
+
+.heartGroup4 {
+  color: rgb(245,0,37);
+}
+
+.heartGroup5 {
+  color: rgb(166,23,150);
+}
+
+.heartGroup6 {
+  color: rgb(0,155,225);
+}
+
+
 
 
 
