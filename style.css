@@ -52,6 +52,34 @@ body {
   color: rgb(242,92,92);
 }
 
+/*COLORS*/
+
+.Group1 {
+  background-color: rgb(18,197,72);
+}
+
+.Group2 {
+  background-color: rgb(255,185,0);
+}
+
+.Group3 {
+  background-color: rgb(255,120,0);
+}
+
+.Group4 {
+  background-color: rgb(245,0,37);
+}
+
+.Group5 {
+  background-color: rgb(166,23,150);
+}
+
+.Group6 {
+  background-color: rgb(0,155,225);
+}
+
+
+
 /*FULL PAGE ANIMATIONS*/
 
 .animationFull {
@@ -59,6 +87,7 @@ body {
   height: 200px;
   background-color: white;
 }
+
 
 /*RAINBOW LINES DIV*/
 
@@ -78,54 +107,55 @@ body {
   width: 50px;
   height: 200px;
   transform: rotate(45deg);
+  transition: background-color 1s;
 }
 
 .lineGroup1 {
-  background-color: rgb(65,200,192);
+  background-color: rgb(18,197,72);
 }
 
 .lineGroup1:hover {
-  background-color: rgb(200,65,73);
+  background-color: rgb(197,18,143);
 }
 
 .lineGroup2 {
-  background-color: rgb(81,128,160);
+  background-color: rgb(255,185,0);
 }
 
 .lineGroup2:hover {
-  background-color: rgb(80,219,178);
+  background-color: rgb(0,70,255);
 }
 
 .lineGroup3 {
-  background-color: rgb(127,118,162);
+  background-color: rgb(255,120,0);
 }
 
 .lineGroup3:hover {
-  background-color: rgb(151,160,115);
+  background-color: rgb(0,135,255);
 }
 
 .lineGroup4 {
-  background-color: rgb(255,112,116);
+  background-color: rgb(245,0,37);
 }
 
 .lineGroup4:hover {
-  background-color: rgb(112,255,251);
+  background-color: rgb(0,245,208);
 }
 
 .lineGroup5 {
-  background-color: rgb(255,190,163);
+  background-color: rgb(166,23,150);
 }
 
 .lineGroup5:hover {
-  background-color: rgb(163,228,255);
+  background-color: rgb(23,166,39);
 }
 
 .lineGroup6 {
-  background-color: rgb(255,230,193);
+  background-color: rgb(0,155,225);
 }
 
 .lineGroup6:hover {
-  background-color: rgb(193,218,255);
+  background-color: rgb(225,70,0);
 }
 
 
@@ -145,188 +175,45 @@ body {
 }
 
 .headcircle {
-  width: 30px;
-  height: 30px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin: 5px;
-  transform: translateY(-30px);
+/*  transform: translateY(-30px);*/
+}
+
+.headcircle:hover {
   animation: bounce-balls 1.2s cubic-bezier(0.245, 0.325, 0.510, 1.305) infinite alternate;
 }
 
 @keyframes bounce-balls {
-  30% {transform: translateY(-30px);}
+/*  30% {transform: translateY(0px);}*/
   60% {transform: translateY(115px);}
   80% {transform: translateY(100px);}
   100% {transform: translateY(105px);}
 }
 
-.circleGroup1 {
-  background-color: rgb(173,216,230);
+/*SPINNERS*/
+
+.spinnerwrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.spinner {
+  border-radius: 2% 50%;
+  height: 100px;
+  transition: 3s ease-out;
+  width: 100px;
 }
 
-.circleGroup2 {
-  background-color: rgb(135,206,250);
-}
-
-.circleGroup3 {
-  background-color: rgb(100,149,237);
-}
-
-.circleGroup4 {
-  background-color: rgb(70,130,180);
-}
-
-.circleGroup5 {
-  background-color: rgb(0,0,205);
-}
-
-.circleGroup6 {
-  background-color: rgb(0,0,128);
-}
-
-#head-cir1 {
-  animation-delay: .1s;
-}
-
-#head-cir2 {
-  animation-delay: .2s;
-}
-
-#head-cir3 {
-  animation-delay: .3s;
-}
-
-#head-cir4 {
-  animation-delay: .4s;
-}
-
-#head-cir5 {
-  animation-delay: .5s;
-}
-
-#head-cir6 {
-  animation-delay: .6s;
-}
-
-#head-cir7 {
-  animation-delay: .7s;
-}
-
-#head-cir8 {
-  animation-delay: .8s;
-}
-
-#head-cir9 {
-  animation-delay: .9s;
-}
-
-#head-cir10 {
-  animation-delay: 1.0s;
-}
-
-#head-cir11 {
-  animation-delay: 1.1s;
-}
-
-#head-cir12 {
-  animation-delay: 1.2s;
-}
-
-#head-cir13 {
-  animation-delay: 1.3s;
-}
-
-#head-cir14 {
-  animation-delay: 1.4s;
-}
-
-#head-cir15 {
-  animation-delay: 1.5s;
-}
-
-#head-cir16 {
-  animation-delay: 1.6s;
-}
-
-#head-cir17 {
-  animation-delay: 1.7s;
-}
-
-#head-cir18 {
-  animation-delay: 1.8s;
-}
-#head-cir19 {
-  animation-delay: 1.9s;
-}
-
-#head-cir20 {
-  animation-delay: 2.0s;
-}
-
-#head-cir21 {
-  animation-delay: 2.1s;
-}
-
-#head-cir22 {
-  animation-delay: 2.2s;
-}
-
-#head-cir23 {
-  animation-delay: 2.3s;
-}
-
-#head-cir24 {
-  animation-delay: 2.4s;
-}
-
-#head-cir25 {
-  animation-delay: 2.5s;
-}
-#head-cir26 {
-  animation-delay: 2.6s;
-}
-
-#head-cir27 {
-  animation-delay: 2.7s;
-}
-
-#head-cir28 {
-  animation-delay: 2.8s;
-}
-
-#head-cir29 {
-  animation-delay: 2.9s;
-}
-
-#head-cir30 {
-  animation-delay: 3.0s;
-}
-
-#head-cir31 {
-  animation-delay: 3.1s;
-}
-#head-cir32 {
-  animation-delay: 3.2s;
-}
-
-#head-cir33 {
-  animation-delay: 3.3s;
-}
-
-#head-cir34 {
-  animation-delay: 3.4s;
-}
-
-#head-cir35 {
-  animation-delay: 3.5s;
-}
-
-#head-cir36 {
-  animation-delay: 3.6s;
+.spinner:hover {
+  transform: rotate(1080deg);
 }
 
 
-/*CSS ANIMATIONS*/
+
+/* SMALL CSS ANIMATIONS*/
 .animationWrap {
   display: flex;
   position: relative;
@@ -401,7 +288,6 @@ body {
 
 #changeColorHoverDiv:hover {
   background-color: gold;
-
 }
 
 /*FADE IN ON HOVER*/
@@ -477,45 +363,4 @@ body {
   animation-delay: .5s;
 }
 
-/*SPINNERS*/
-
-.spinnerwrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.spinner {
-  border-radius: 2% 50%;
-  height: 100px;
-  transition: 3s ease-out;
-  width: 100px;
-}
-
-.spinner:hover {
-  transform: rotate(1080deg);
-}
-
-.spinnerGroup1 {
-  background-color: rgb(65,200,192);
-}
-
-.spinnerGroup2 {
-  background-color: rgb(81,128,160);
-}
-
-.spinnerGroup3 {
-  background-color: rgb(127,118,162);
-}
-
-.spinnerGroup4 {
-  background-color: rgb(255,112,116);
-}
-
-.spinnerGroup5 {
-  background-color: rgb(255,190,163);
-}
-
-.spinnerGroup6 {
-  background-color: rgb(255,230,193);
-}
 
