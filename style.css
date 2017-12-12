@@ -1,6 +1,9 @@
 /*
 font-family: 'Open Sans Condensed', sans-serif;
 font-family: 'Open Sans', sans-serif;
+font-family: 'Nixie One', cursive;
+font-family: 'Londrina Outline', cursive;
+font-family: 'Gruppo', cursive;
 */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -10,29 +13,25 @@ body {
 
 #title {
   font-size: 100px;
-  width: 700px;
+  width: 100%;
   text-align: center;
   text-transform: uppercase;
   border: 5px solid white;
   margin: 0 auto;
   background-color: rgb(64,64,64);
+  font-family: 'Londrina Outline', cursive;
 }
 
 #heart {
   color: rgb(242,92,92);
 }
 
-#byline {
+.tagline {
+  font-family: 'Nixie One', cursive;
   font-size: 30px;
   text-align: center;
   margin: 30px;
-}
-
-#tagline {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 30px;
-  text-align: center;
-  margin: 100px;
+  color: black;
 }
 
 .subhead {
@@ -43,6 +42,8 @@ body {
   border: 5px solid white;
   color: white;
   background-color: rgb(64,64,64);
+  font-family: 'Londrina Outline', cursive;
+  text-transform: uppercase;
 }
 
 .subheadcat {
@@ -84,8 +85,38 @@ body {
 
 .animationFull {
   width: 100%;
-  height: 200px;
+  height: 250px;
   background-color: white;
+/*  display: flex;*/
+}
+
+.animationFullTitle {
+  text-align: center;
+  opacity: 1;
+  color: black;
+  margin: 10px;
+  font-family: 'Londrina Outline', cursive;
+  font-size: 50px;
+  z-index: 2;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.animationFullWrap {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  z-index: 1;
+  position: relative;
+  opacity: .5;
+  color: black;
+  justify-content: space-around;
+}
+
+.animationFullWrap:hover {
+  opacity: 1;
 }
 
 .childAnim {
@@ -95,7 +126,14 @@ body {
 /*RAINBOW LINES DIV*/
 
 #rainbowlines {
-  border: 1px solid white;
+  text-align: center;
+  opacity: 1;
+  color: black;
+  margin: 30px;
+  font-family: 'Londrina Outline', cursive;
+  font-size: 50px;
+  z-index: 2;
+  width: 100%;
 }
 
 .rainbowLinesWrap {
@@ -104,7 +142,16 @@ body {
   display: flex;
   flex-direction: row;
   padding-left: 0;
+  z-index: 1;
+  position: absolute;
+  opacity: .5;
+  color: black;
 }
+
+.rainbowLinesWrap:hover {
+  opacity: 1;
+}
+
 
 .line {
   width: 50px;
@@ -164,18 +211,6 @@ body {
 
 
 /*CIRCLES FALLING DIV*/
-
-.headcirclesFalling {
-  text-align: center;
-}
-
-.headcirclesFallWrap {
-  text-align: center;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  padding-left: 0;
-}
 
 .headcircle {
   width: 100px;
@@ -244,12 +279,6 @@ body {
   100% { transform: scale(1); }
 }
 
-/*.beatHeart:before,
-.beatHeart:after {
-  font-size: 100px;
-}*/
-
-
 .heartGroup1 {
   color: rgb(18,197,72);
 }
@@ -275,6 +304,12 @@ body {
 }
 
 
+/*FLOWER PETALS*/
+.flowerPetal {
+  border-radius: 2% 50%;
+  height: 100px;
+  width: 100px;
+}
 
 
 
