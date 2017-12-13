@@ -43,11 +43,38 @@ body {
   text-transform: uppercase;
 }
 
+.subdescription {
+  font-family: 'Nixie One', cursive;
+  font-size: 24px;
+  text-align: center;
+  color: black;
+  margin: 30px;
+}
+
 .subheadcat {
   font-size: 30px;
   margin: 30px 0 30px 0;
   text-align: center;
   color: rgb(242,92,92);
+}
+
+.contactLink {
+  text-decoration: none;
+}
+
+.contactButton {
+  font-family: 'Londrina Outline', cursive;
+  text-transform: uppercase;
+  background-color: rgb(242,92,92);
+  color: white;
+  width: 30%;
+  height: 50px;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 /*COLORS*/
@@ -82,7 +109,7 @@ body {
 
 .animationFull {
   width: 100%;
-  height: 250px;
+/*  height: 250px;*/
   background-color: white;
 /*  display: flex;*/
 }
@@ -205,7 +232,7 @@ body {
 .spinner {
   border-radius: 2% 50%;
   height: 100px;
-  transition: 3s ease-out;
+  transition: 2s ease-out;
   width: 100px;
 }
 
@@ -256,11 +283,74 @@ body {
 
 
 /*FLOWER PETALS*/
+.wholeFlower {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  transition: transform 2s, opacity 2s ease-out;
+}
+
+.wholeFlower:hover {
+  transform: rotate(800deg);
+  opacity: 0;
+}
+
 .flowerPetal {
   border-radius: 2% 50%;
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
+  opacity: 1;
+  position: absolute;
 }
+
+.flowerCenter {
+  position: absolute;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-top: 100px;
+  margin-left: 100px;
+  z-index: 2;
+}
+
+#petal1 {
+  margin-left: 53px;
+  margin-top: 70px;
+}
+
+#petal2 {
+  margin-left: 95px;
+  margin-top: 40px;
+  transform: rotate(45deg);
+}
+
+#petal3 {
+  margin-left: 138px;
+  margin-top: 70px;
+  transform: rotate(90deg);
+}
+
+#petal4 {
+  margin-left: 138px;
+  margin-top: 128px;
+}
+
+#petal5 {
+  margin-left: 95px;
+  margin-top: 140px;
+  transform: rotate(45deg);
+}
+
+#petal6 {
+  margin-left: 53px;
+  margin-top: 128px;
+  transform: rotate(90deg);
+}
+
+
 
 
 
