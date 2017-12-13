@@ -3,7 +3,7 @@ font-family: 'Nixie One', cursive;
 font-family: 'Londrina Outline', cursive;
 */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nixie One', cursive;
   background-color: white;
   color: rgb(255,255,255);
 }
@@ -32,6 +32,7 @@ body {
 }
 
 .subhead {
+  width: 100%;
   font-size: 30px;
   margin: 30px 0 30px 0;
   text-align: center;
@@ -350,158 +351,130 @@ body {
   transform: rotate(90deg);
 }
 
+/*SITE REPLICATIONS*/
 
-
-
-
-/* SMALL CSS ANIMATIONS*/
-.animationWrap {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.animation {
-  position: relative;
-  background-color: white;
-  border: 1px solid darkgray;
-  padding: 0 10px 10px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
-  height: 200px;
-  border-radius: 5px;
-}
-
-.animationTitle {
-  margin-bottom: 10px;
-  background-color: rgb(64,64,64);
-  text-align: center;
+.repWrap {
   width: 100%;
-  font-size: 14px;
-  padding: 10px;
-  color: rgb(242,92,92);
-  border-radius: 5px 5px 0 0;
-}
-
-/*DROP DOWN REVEAL HOVER*/
-
-#stationaryDiv {
+  height: 280px;
+  display: flex;
   position: relative;
-  height: 100px;
-  width: 100px;
-  background-color: blue;
 }
 
-#dropdownDiv {
+.repTitleWrap {
+  width: 100%;
+  height: 280px;
   position: absolute;
-  bottom: 100%;
-  height: 0;
-  background-color: gold;
-  overflow: hidden;
-  transition: 1s ease;
+  background-color: rgb(242,92,92);
+  opacity: .9;
+  z-index: 2;
 }
 
-#stationaryDiv:hover #dropdownDiv {
-  bottom: 0;
-  height: 100%;
+.repTitle {
   width: 100%;
+  height: 200px;
+  line-height: 200px;
+  color: white;
+  font-family: 'Nixie One', cursive;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  background-color: rgb(242,92,92);
+  opacity: .9;
 }
 
-/*CHANGE COLOR ON CLICK*/
-
-#changeColorClickDiv {
-  height: 100px;
-  width: 100px;
-  background-color: blue;
+.repButtonWrap {
+  display: flex;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
 }
 
-/*CHANGE COLOR ON HOVER*/
-
-#changeColorHoverDiv {
-  height: 100px;
-  width: 100px;
-  background-color: blue;
-  transition: background-color 2s;
+.repButton {
+  font-family: 'Nixie One', cursive;
+  color: rgb(242,92,92);
+  font-size: 50px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  align-self: center;
+  transition: transform 1s;
+  transform-origin: center;
 }
 
-#changeColorHoverDiv:hover {
-  background-color: gold;
+.repButton:hover {
+  transform: rotate(180deg);
 }
 
-/*FADE IN ON HOVER*/
-#fadeInDiv {
-  height: 100px;
-  width: 100px;
-  background-color: blue;
-  opacity: .4;
-  transition: .5s ease-in-out;
-}
 
-#fadeInDiv:hover {
-  opacity: 1;
-}
-
-/*CIRCLES FALLING*/
-
-#circlesFalling {
+.repButtonCircle {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
   text-align: center;
 }
 
-.circlesFallWrap {
-  text-align: center;
-  list-style: none;
+.repInfo {
+  width: 100%;
+  height: 200px;
+  position: absolute;
   display: flex;
   flex-direction: row;
-  padding-left: 0;
+  z-index: 1;
 }
 
-.circle {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin: 5px;
-  transform: translateY(-30px);
-  animation: bounce-balls 1.2s cubic-bezier(0.245, 0.325, 0.510, 1.305) infinite alternate;
+.repImg {
+  position: relative;
+  background-image: url(./assets/instagram-replication.png);
+  width: 50%;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
-@keyframes bounce-balls {
-  30% {transform: translateY(-30px);}
-  60% {transform: translateY(115px);}
-  80% {transform: translateY(100px);}
-  100% {transform: translateY(105px);}
+.repDesc {
+  position: relative;
+  width: 50%;
+  height: 200px;
 }
 
-#cir1 {
-  background-color: rgb(173,216,230);
-  animation-delay: .6s;
+.repSmallTitle {
+  color: black;
+  font-family: 'Londrina Outline', cursive;
+  font-size: 30px;
 }
 
-#cir2 {
-  background-color: rgb(135,206,250);
-  animation-delay: .7s;
+.repTechnologiesTitle {
+  font-family: 'Nixie One', cursive;
+  font-size: 18px;
+  color: black;
 }
 
-#cir3 {
-  background-color: rgb(100,149,237);
-  animation-delay: .8s;
+.repTechnologies {
+  font-family: 'Nixie One', cursive;
+  font-size: 18px;
+  color: black;
 }
 
-#cir4 {
-  background-color: rgb(70,130,180);
-  animation-delay: .6s;
+.repTechnologiesDesc {
+  font-family: 'Nixie One', cursive;
+  font-size: 18px;
+  color: black;
 }
 
-#cir5 {
-  background-color: rgb(0,0,205);
-  animation-delay: .4s;
+.repTechnologiesLink {
+  font-family: 'Nixie One', cursive;
+  font-size: 18px;
+  color: black;
 }
 
-#cir6 {
-  background-color: rgb(0,0,128);
-  animation-delay: .5s;
+.repLink {
+  text-decoration: none;
 }
-
-
