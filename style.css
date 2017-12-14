@@ -8,12 +8,21 @@ body {
   color: rgb(255,255,255);
 }
 
+.sectionWrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.section {
+  position: relative;
+}
+
 #title {
   font-size: 100px;
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  border: 5px solid white;
   margin: 0 auto;
   background-color: rgb(64,64,64);
   font-family: 'Londrina Outline', cursive;
@@ -23,9 +32,13 @@ body {
   color: rgb(242,92,92);
 }
 
+.landingdesc {
+  margin: 70px 0 70px 0;
+}
+
 .tagline {
   font-family: 'Nixie One', cursive;
-  font-size: 30px;
+  font-size: 24px;
   text-align: center;
   margin: 30px;
   color: black;
@@ -36,12 +49,12 @@ body {
   font-size: 30px;
   margin: 30px 0 30px 0;
   text-align: center;
-  padding: 20px;
-  border: 5px solid white;
+  padding: 20px 0;
   color: white;
   background-color: rgb(64,64,64);
   font-family: 'Londrina Outline', cursive;
   text-transform: uppercase;
+  position: relative;
 }
 
 .subdescription {
@@ -68,7 +81,7 @@ body {
   text-transform: uppercase;
   background-color: rgb(242,92,92);
   color: white;
-  width: 30%;
+  width: 50%;
   height: 50px;
   margin: 0 auto;
   text-decoration: none;
@@ -218,11 +231,11 @@ body {
 }
 
 .headcircle:hover {
-  animation: bounce-balls 1.2s cubic-bezier(0.245, 0.325, 0.510, 1.305) infinite alternate;
+  animation: bounce-balls 1s cubic-bezier(0.245, 0.325, 0.510, 1.305) infinite alternate;
 }
 
 @keyframes bounce-balls {
-/*  30% {transform: translateY(0px);}*/
+  30% {transform: translateY(0px);}
   60% {transform: translateY(115px);}
   80% {transform: translateY(100px);}
   100% {transform: translateY(105px);}
@@ -357,6 +370,7 @@ body {
   width: 100%;
   height: 280px;
   display: flex;
+  flex-direction: row;
   position: relative;
 }
 
@@ -422,59 +436,149 @@ body {
 
 .repInfo {
   width: 100%;
-  height: 200px;
+/*  height: 260px;*/
   position: absolute;
   display: flex;
   flex-direction: row;
   z-index: 1;
+  padding: 0 20px 0 20px;
 }
 
 .repImg {
   position: relative;
   background-image: url(./assets/instagram-replication.png);
   width: 50%;
-  height: 200px;
-  background-size: contain;
+  height: 260px;
+  background-size: cover;
   background-repeat: no-repeat;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 .repDesc {
   position: relative;
   width: 50%;
-  height: 200px;
+/*  height: 260px;*/
+  padding: 0 30px;
 }
 
 .repSmallTitle {
+  position: relative;
   color: black;
   font-family: 'Londrina Outline', cursive;
   font-size: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .repTechnologiesTitle {
+  position: relative;
   font-family: 'Nixie One', cursive;
   font-size: 18px;
   color: black;
 }
 
 .repTechnologies {
+  position: relative;
   font-family: 'Nixie One', cursive;
-  font-size: 18px;
+  font-size: 16px;
   color: black;
+  margin-bottom: 20px;
 }
 
 .repTechnologiesDesc {
+  position: relative;
   font-family: 'Nixie One', cursive;
-  font-size: 18px;
+  font-size: 16px;
   color: black;
+  margin-bottom: 20px;
 }
 
 .repTechnologiesLink {
-  font-family: 'Nixie One', cursive;
+  position: relative;
+  font-family: 'Londrina Outline', cursive;
   font-size: 18px;
-  color: black;
+  background-color: rgb(242,92,92);
+  border-radius: 5px;
+  padding: 2px;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.repTechnologiesLink:hover {
+  background-color: rgb(245,137,137);
 }
 
 .repLink {
   text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+  .repWrap {
+    position: absolute;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .repImg {
+    width: 50%;
+    background-size: contain;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  .repTitleWrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .repTitle {
+    position: relative;
+    font-size: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding: 10px 0 10px 0;
+  }
+  .repButtonWrap {
+    margin-top: 5px;
+    visibility: hidden;
+  }
+  .repButtonCircle {
+    visibility: hidden;
+  }
+  .repButton {
+    visibility: hidden;
+  }
+  .repInfo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    z-index: 1;
+  }
+  .repDesc{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .repSmallTitle {
+    text-align: center;
+  }
+  .repTechnologiesDesc {
+    width: 100%;
+  }
+  .repTechnologiesLink {
+    margin: 0 auto;
+  }
+
+}
+
