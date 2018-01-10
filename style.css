@@ -76,6 +76,8 @@ body {
   text-decoration: none;
 }
 
+
+
 .contactButton {
   font-family: 'Londrina Outline', cursive;
   text-transform: uppercase;
@@ -90,6 +92,11 @@ body {
   border-radius: 10px;
   padding: 20px;
 }
+
+.contactButton:hover {
+  background-color: rgb(245,137,137);
+}
+
 
 /*COLORS*/
 
