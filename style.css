@@ -463,6 +463,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+  border: 1px solid gray;
 }
 
 .repDesc {
