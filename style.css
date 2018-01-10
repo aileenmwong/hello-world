@@ -373,6 +373,7 @@ body {
   flex-direction: row;
   position: relative;
   display: block;
+  margin: 10px 0;
 }
 
 .repTitleWrap {
@@ -445,9 +446,16 @@ body {
   padding: 0 20px 0 20px;
 }
 
+.imgInsta {
+  background-image: url(./assets/instagram-replication.png);
+}
+
+.imgMadewell {
+  background-image: url(./assets/madewell-site.png);
+}
+
 .repImg {
   position: relative;
-  background-image: url(./assets/instagram-replication.png);
   width: 50%;
   height: 260px;
   background-size: cover;
