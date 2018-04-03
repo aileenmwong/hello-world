@@ -371,6 +371,59 @@ body {
   transform: rotate(90deg);
 }
 
+
+/*IMAGE ANIMATIONS*/
+
+.imgAnimWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.imgAnimItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgAnimTitle {
+  color: black;
+  font-family: 'Londrina Outline', cursive;
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.imgAnim {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  border-radius: 1px solid lightgray;
+  margin-bottom: 10px;
+}
+
+.imgAnim:hover {
+  opacity: .7;
+}
+
+.imgUnicorn {
+  background-image: url(./assets/unicorn.gif);
+}
+
+.imgAnimDesc {
+  font-family: 'Nixie One', cursive;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+
 /*SITE REPLICATIONS*/
 
 .repWrap {
@@ -473,6 +526,10 @@ body {
   border: 1px solid gray;
 }
 
+/*.repImg:hover {
+  opacity: .7;
+}*/
+
 .repDesc {
   position: relative;
   width: 50%;
@@ -523,14 +580,22 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: white;
+  margin-bottom: 10px;
 }
 
 .repTechnologiesLink:hover {
   background-color: rgb(245,137,137);
 }
 
+.repLinkWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .repLink {
   text-decoration: none;
+  margin: 10px;
 }
 
 @media screen and (max-width: 768px) {
