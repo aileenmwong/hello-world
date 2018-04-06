@@ -416,6 +416,10 @@ body {
   background-image: url(./assets/unicorn.gif);
 }
 
+.imgCactus {
+  background-image: url(./assets/cactus.gif);
+}
+
 .imgAnimDesc {
   font-family: 'Nixie One', cursive;
   font-size: 16px;
