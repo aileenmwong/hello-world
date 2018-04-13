@@ -421,6 +421,10 @@ body {
   background-image: url(./assets/cactus.gif);
 }
 
+.imgMilk {
+  background-image: url(./assets/spilled-milk.gif);
+}
+
 .imgAnimDesc {
   font-family: 'Nixie One', cursive;
   font-size: 16px;
